@@ -21,5 +21,5 @@ Como o projeto foi desenvolvido individualmente, fui o único responsável por 1
 * Gravação do vídeo de apresentação do código e do layout final.
 
 ## Links Importantes
-* **Link do GitHub Pages:** [COLE AQUI O LINK DO SEU SITE HOSPEDADO]
+* **Link do GitHub Pages:** [[link](https://dudusxx.github.io/Portifolio-Responsivo/)]
 * **Link do Vídeo de Apresentação:** [COLE AQUI O LINK DO YOUTUBE/DRIVE]
