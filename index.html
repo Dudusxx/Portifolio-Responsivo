@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Eduardo Coutinho</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho  -->
+    <header>
+        <h1>Eduardo Coutinho</h1>
+        <p>Desenvolvedor Full Stack</p>
+        <nav>
+            <!-- Links -->
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        
+        <!-- Seções  -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <!-- Imagem de perfil na pasta img -->
+            <img src="img/perfil.jpeg" alt="Foto de perfil de Eduardo" class="img-responsiva">
+            <p>Olá! Sou o Eduardo, estudante de tecnologia focado em me tornar um Desenvolvedor Full Stack. Tenho grande interesse na lógica de programação e no desenvolvimento de soluções completas, conectando interfaces dinâmicas com bancos de dados robustos.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Minhas Habilidades</h2>
+            <!-- Tabela e Listas -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Front-end</th>
+                        <th>Back-end & Banco de Dados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>HTML5 Semântico</li>
+                                <li>CSS3 Responsivo</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>PHP</li>
+                                <li>MySQL / SQL</li>
+                                <li>Node.js</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container">
+                
+                <!-- projetos -->
+                <article class="card-projeto">
+                    <h3>Sistema de Cadastro de Bebês</h3>
+                    <img src="img/projeto1.jpg" alt="seila bota a foto ai" class="img-responsiva">
+                    <p>Sistema CRUD desenvolvido com PHP e MySQL para gerenciar registros e informações médicas.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </article>
+
+                <article class="card-projeto">
+                    <h3>Sistema de uma Pizzaria</h3>
+                    <img src="img/projeto2.jpg" alt="foto da pizza" class="img-responsiva">
+                    <p>Sistema de uma pizzaria criado com PHP, CSS e JavaScript para realização de pedidos.</p>
+                    <a href="https://github.com/Dudusxx/pizzaria" target="_blank">Ver no GitHub</a>
+                </article>
+
+                <article class="card-projeto">
+                    <h3>Projeto 3</h3>
+                    <img src="img/projeto3.jpg" alt="projeto lalala" class="img-responsiva">
+                    <p>inventa o texto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <!-- Formulário-->
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Dud0x_ - Desenvolvido para a disciplina de Programação para a Internet I.</p>
+    </footer>
+
+</body>
+</html>
