@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121214; 
+    color: #e1e1e6; 
+    line-height: 1.6;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+
+}
+
+.img-responsiva {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* TELAS GRANDES */
+.projetos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card-projeto {
+    background: #202024;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Sombra */
+    flex: 1; 
+    border: 1px solid #323238; /* Borda  */
+    transition: transform 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: scale(1.02); /* zoom ao passar o mouse */
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #202024;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+table, th, td {
+    border: 1px solid #323238;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #29292e;
+    color: #ffffff;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #323238;
+    background-color: #121214;
+    color: #e1e1e6;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0056b3; 
+}
+/* alinhamento TAB HAB */
+#habilidades td ul {
+    list-style-position: inside; 
+    padding-left: 0; 
+    margin: 0;
+}
+
+#habilidades td li {
+    margin-bottom: 8px; 
+}
+
+/* Formulário estruturado */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #003d82;
+}
+header, footer {
+    background-color: #202024; 
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #0056b3; 
+}
+
+footer {
+    border-top: 3px solid #0056b3;
+    border-bottom: none;
+    margin-top: 40px;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+/* foto de perfil */
+#sobre img {
+    width: 180px;         
+    height: 180px;        
+    border-radius: 50%;   
+    object-fit: cover;    
+    display: block;       
+    margin: 0 auto 20px;  
+    border: 3px solid #0056b3; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Empilhamento */
+    .projetos-container {
+        flex-direction: column; 
+    }
+
+    /* Ajuste da navegação para telas menores */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* Estilizando os links */
+.card-projeto a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0056b3; 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.card-projeto a:hover {
+    background-color: #003d82; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+/* Organizando a lista do menu - Agora centralizado */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 15px;
+    padding-top: 20px; 
+}
+
+/* Estilizando os links do menu - Melhorando o contraste */
+nav ul li a {
+    text-decoration: none;
+    color: #e1e1e6; 
+    font-weight: bold;
+    padding: 8px 25px; 
+    border-radius: 25px;
+    border: 2px solid #0056b3; 
+    transition: all 0.3s ease;
+}
+
+/* O efeito hover (passar o mouse) continua igual */
+nav ul li a:hover {
+    background-color: #0056b3; 
+    color: #ffffff; 
+}
